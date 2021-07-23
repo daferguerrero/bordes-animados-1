@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #eb4d4b;
+    color: #130f40;
+}
+
+h1{
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.btn{
+    background-color: #ff7979;
+    line-height: 3em;
+    padding: 0 2em;
+    margin: 2em;
+    font-size: 15px;
+    position: relative;
+}
+
+.btn::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #130f40;
+    position: absolute;
+
+    bottom: 0;
+
+    transition: all 0.3s;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+.uno::before{
+    left: 0;
+}
+
+.dos::before{
+    right: 0;
+}
+
+.tres::before{
+    left: 50%;
+}
+
+.tres:hover::before{
+    left: 0;
+}
