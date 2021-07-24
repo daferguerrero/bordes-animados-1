@@ -23,6 +23,7 @@ h1{
     margin: 2em;
     font-size: 15px;
     position: relative;
+    cursor: pointer;
 }
 
 .btn::before{
